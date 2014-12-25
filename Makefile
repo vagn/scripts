@@ -1,9 +1,16 @@
 
-default:
-	git status
+default: status
+
+add:
+	git add 
+
+commit push pull status:
+	git $@
 
 
-
+ci:
+	git commit
+	git push
 
 
 # 178  git config --global push.default simple
